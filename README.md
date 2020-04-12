@@ -34,7 +34,7 @@ GPIO.cleanup()
 Candle(gpiomode=GPIO.BCM)
 ```
 
-    gpiomode: How to specify GPIO number
+gpiomode: How to specify GPIO number
 
 Create an instance.
 
@@ -42,11 +42,11 @@ Create an instance.
 create(pin, brightness=100, rate=100, ratio=100, pwmfreq=1000)
 ```
 
-    pin: GPIO pin number
-    brightness: Brightness level(optional)
-    rate: Speed ​​of change(optional)
-    ratio: The magnitude of the fluctuation(optional)
-    pwmfreq: PWM frequency(optional)
+pin: GPIO pin number  
+brightness: Brightness level(optional)  
+rate: Speed ​​of change(optional)  
+ratio: The magnitude of the fluctuation(optional)  
+pwmfreq: PWM frequency(optional)
 
 Creates a candle on the specified pin.
 
@@ -54,7 +54,7 @@ Creates a candle on the specified pin.
 reset(pin=None)
 ```
 
-    pin: GPIO pin number(optional)
+pin: GPIO pin number(optional)
 
 Resets the settings of the specified pin.
 If the argument is omitted, it is executed on all pins.
@@ -63,9 +63,9 @@ If the argument is omitted, it is executed on all pins.
 shuffle(min, max, pin=None)
 ```
 
-    min: Lower bound of shuffle range
-    max: Upper limit of shuffle range
-    pin: GPIO pin number(optional)
+min: Lower bound of shuffle range  
+max: Upper limit of shuffle range  
+pin: GPIO pin number(optional)
 
 Shuffles the start of the waveform to the specified pin between min and max.
 If pin is omitted, execute on all pins.
@@ -74,9 +74,9 @@ If pin is omitted, execute on all pins.
 pin(beforepin, afterpin, pwmfreq=1000)
 ```
 
-    beforepin: Pin before change
-    afterpin: Pin after change
-    pwmfreq: PWM frequency(optional)
+beforepin: Pin before change  
+afterpin: Pin after change  
+pwmfreq: PWM frequency(optional)
 
 Change the output pin.
 If pin is omitted, execute on all pins.
@@ -85,8 +85,8 @@ If pin is omitted, execute on all pins.
 brightness(brightness, pin=None)
 ```
 
-    brightness: Brightness level
-    pin: GPIO pin number(optional)
+brightness: Brightness level  
+pin: GPIO pin number(optional)
 
 Change the brightness.
 If pin is omitted, execute on all pins.
@@ -95,8 +95,8 @@ If pin is omitted, execute on all pins.
 rate(rate, pin=None)
 ```
 
-    rate: Speed ​​of change
-    pin: GPIO pin number(optional)
+rate: Speed ​​of change  
+pin: GPIO pin number(optional)
 
 Change the speed of change.
 If pin is omitted, execute on all pins.
@@ -105,8 +105,8 @@ If pin is omitted, execute on all pins.
 ratio(ratio, pin=None)
 ```
 
-    ratio: The magnitude of the fluctuation
-    pin: GPIO pin number(optional)
+ratio: The magnitude of the fluctuation  
+pin: GPIO pin number(optional)
 
 Change the size of the fluctuation.
 If pin is omitted, execute on all pins.
@@ -115,8 +115,8 @@ If pin is omitted, execute on all pins.
 parameter(value, pin=None)
 ```
 
-    value: Parameter value
-    pin: GPIO pin number(optional)
+value: Parameter value  
+pin: GPIO pin number(optional)
 
 Change the value of a parameter.
 If pin is omitted, execute on all pins.
@@ -125,8 +125,8 @@ If pin is omitted, execute on all pins.
 wave(value, pin=None)
 ```
 
-    value: Number of sine waves to combine
-    pin: GPIO pin number(optional)
+value: Number of sine waves to combine  
+pin: GPIO pin number(optional)
 
 Change the number of sine waves to combine.
 If pin is omitted, execute on all pins.
@@ -135,7 +135,7 @@ If pin is omitted, execute on all pins.
 refresh(pin=None)
 ```
 
-    pin: GPIO pin number(optional)
+pin: GPIO pin number(optional)
 
 PWM output to the specified pin.
 If the argument is omitted, it is executed on all pins.
