@@ -8,7 +8,7 @@ With this library, you can change brightness, speed, fluctuation and more. This 
 
 ## Demo
 
-````python:example
+````python:example.py
 from Candle import Candle
 import time
 import RPi.GPIO as GPIO
@@ -30,7 +30,7 @@ GPIO.cleanup()
 
 #### Method
 
-````python:example
+````python:example.py
 Candle(gpiomode=GPIO.BCM)
 ````
 
@@ -38,7 +38,7 @@ gpiomode: How to specify GPIO number
 
 Create an instance.
 
-````python:example
+````python:example.py
 create(pin, brightness=100, rate=100, ratio=100, pwmfreq=1000)
 ````
 
@@ -50,7 +50,7 @@ pwmfreq: PWM frequency(optional)
 
 Creates a candle on the specified pin.
 
-````python:example
+````python:example.py
 reset(pin=None)
 ````
 
@@ -59,7 +59,7 @@ pin: GPIO pin number(optional)
 Resets the settings of the specified pin.
 If the argument is omitted, it is executed on all pins.
 
-````python:example
+````python:example.py
 shuffle(min, max, pin=None)
 ````
 
@@ -70,7 +70,7 @@ pin: GPIO pin number(optional)
 Shuffles the start of the waveform to the specified pin between min and max.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 pin(beforepin, afterpin, pwmfreq=1000)
 ````
 
@@ -81,7 +81,7 @@ pwmfreq: PWM frequency(optional)
 Change the output pin.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 brightness(brightness, pin=None)
 ````
 
@@ -91,7 +91,7 @@ pin: GPIO pin number(optional)
 Change the brightness.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 rate(rate, pin=None)
 ````
 
@@ -101,7 +101,7 @@ pin: GPIO pin number(optional)
 Change the speed of change.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 ratio(ratio, pin=None)
 ````
 
@@ -111,7 +111,7 @@ pin: GPIO pin number(optional)
 Change the size of the fluctuation.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 parameter(value, pin=None)
 ````
 
@@ -121,7 +121,7 @@ pin: GPIO pin number(optional)
 Change the value of a parameter.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 wave(value, pin=None)
 ````
 
@@ -131,7 +131,7 @@ pin: GPIO pin number(optional)
 Change the number of sine waves to combine.
 If pin is omitted, execute on all pins.
 
-````python:example
+````python:example.py
 refresh(pin=None)
 ````
 
