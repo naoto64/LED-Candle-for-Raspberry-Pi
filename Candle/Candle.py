@@ -15,7 +15,7 @@ class Candle(object):
         super(Candle, self).__init__()
         import RPi.GPIO as GPIO
         GPIO.setwarnings(False)
-        GPIO.setmode(gpioMode)
+        GPIO.setmode(gpiomode)
 
     def create(self, pin, brightness=100, rate=100, ratio=100, pwmfreq=1000):
         import RPi.GPIO as GPIO
