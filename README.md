@@ -6,6 +6,8 @@ LED-Candle-for-Raspberry-Pi
 LED candle library for Raspberry Pi. Using this library, you can create LED candles. Combine multiple frequencies to simulate candle fluctuations.
 With this library, you can change brightness, speed, fluctuation and more. This can be used for illumination as well as candles.
 
+[![LED Candle](https://img.youtube.com/vi/S2dadkG8Yl8/0.jpg)](https://www.youtube.com/watch?v=S2dadkG8Yl8)
+
 ## Demo
 
 ````python:example.py
